@@ -6,6 +6,7 @@ import Contact from '../src/Components/Pages/Contact';
 import About from '../src/Components/Pages/About';
 import Blog from '../src/Components/Pages/Blog';
 import NavBar from './Components/NavBar';
+import ErrorPage from './Components/Pages/ErrorPage';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/about' element={<About />}/>
         <Route path='/contact' element={<Contact />}/>
         <Route path='/blog' element={<Blog />}/>
+        <Route path='*' element={<ErrorPage />}/> {/* This is for showing 404 error page not found*/}
       </Routes>
     </div>
   );
